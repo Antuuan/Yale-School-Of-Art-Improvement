@@ -22,10 +22,10 @@
 }
 
 .big_padding{
-    padding-top: 200px;
-    padding-bottom: 200px;
-    padding-left: 200px;
-    padding-right: 200px;
+    padding-top: 20vw;
+    padding-bottom: 30vw;
+    padding-left: 20vw;
+    padding-right: 20vw;
 }
 
 .small_padding{
@@ -44,22 +44,43 @@
 .body_font{
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     color :black;
-
+    opacity: 100%;
 }
 
 .medium_text{
-    font-size: 20px;
+    font-size: 15px;
 }
 
 .big_text{
-    font-size: 80px;
+    font-weight: 400;
 }
+
+@media screen and (min-width: 801px) {
+    .big_text {
+        font-size: 60px;
+    }
+    .medium_text{
+        font-size: 15px;
+    }
+  }
+  
+  
+  /* If the screen size is 600px wide or less, set the font-size of <div> to 30px */
+  
+  @media screen and (max-width: 300px) {
+    .big_text {
+        font-size: 15px;
+    }
+    .medium_text {
+        font-size: 7px;
+    }
+  }
 
 .margins{
     padding-top: 20px;
     padding-bottom: 20px;
-    padding-left: 20px;
-    padding-right: 20px;
+    padding-left: 30px;
+    padding-right: 30px;
 }
 
 .centre{
@@ -70,15 +91,11 @@
 }
 
 .background {
-    background-image:url("https://tenberke.com/wp-content/uploads/2020/10/I_Yale-University-School-of-Art_05.jpg");
-    position: center center;
+    background-image:url("bg1.jpg");
+    background-position: center;
+    max-height: 100%;
 }
 
 .layer {
-    background-color: rgba(248, 247, 216, 0.7);
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
+    background-color: rgba(100, 100, 100, 0.651);
 }
